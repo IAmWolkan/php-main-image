@@ -8,5 +8,6 @@ RUN apk add --update --no-interactive \
 
 RUN pecl channel-update pecl.php.net
 RUN pecl install yaml && docker-php-ext-enable yaml
+RUN pecl config-set php_ini /etc/php.ini
 
 RUN docker-php-ext-install pdo_mysql
