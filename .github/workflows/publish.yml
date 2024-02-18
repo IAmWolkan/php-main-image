@@ -14,5 +14,4 @@ jobs:
       - name: Build the image
         run: |
           docker build . --tag ghcr.io/wollbro/php-main-image:latest
-          docker run ghcr.io/wollbro/php-main-image:latest
           docker push ghcr.io/wollbro/php-main-image:latest
